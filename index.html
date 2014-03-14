@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html manifest="manifest">
+<head>
+
+    <title>Defensoris Veritatis - Orações</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Splash screen -->
+    <link href="/img/splash.JPG" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="/img/splash.JPG"  media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="/img/splash.JPG" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <link href="/img/splash.JPG" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    
+    <!-- webapp config -->
+    <link rel="apple-touch-icon" href="/my_custom_icon.png"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    
+    <!-- CSS -->    
+    <link rel="stylesheet" href="css/DefensorisVeritatis.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.1.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.1.min.css" /> 
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/mine.css" />        
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/movies-app.css">    
+
+</head>
+    <body>
+        <!-- Home -->
+        <div id="home" data-role="page" data-theme="a">
+            <div data-role="header" data-position="inline">		
+                <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-delete hidden"></a>
+                <h1>Orações</h1>                
+                <a href="#info" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-info ui-btn-icon-notext"></a>
+            </div>
+            <div data-role="content" data-theme="a">                         
+                <div class="swiper-container swiper-nav">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide active-nav">
+                            <span class="angle"></span>
+                            <img src="img/bencaos.jpg" alt="bençaos">
+                            <div class="title">Bençãos</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="angle"></span>
+                            <img src="img/anjoGuarda.jpg" alt="Anjos">
+                            <div class="title">Anjos</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="angle"></span>
+                            <img src="img/schoenstatt.jpg" alt="Nossa Senhora">
+                            <div class="title">Nsª</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="angle"></span>
+                            <img src="img/pedroPaulo.jpg" alt="Santos">
+                            <div class="title">Santos</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="angle"></span>
+                            <img src="img/liturgia.jpg" alt="">
+                            <div class="title">L. das horas</div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="swiper-container swiper-content">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="inner">
+                                <img class="movie-pic" src="img/La_Ultima_Cena_by_Kavaroca.jpg" alt="">
+                                <div class="scroll-overflow">
+                                    <div class="bg-white">
+                                        <h1>Bençãos gerais</h1>                                
+                                        <ul data-role="listview" data-filter="true" data-filter-placeholder="Pesquisar..." data-inset="true" data-theme="b">
+                                            <li><a href="#alimentos" data-transition="slide">Benção dos alimentos</a></li>
+                                            <li><a href="#benca_sta_clara" data-transition="slide">Benção de Stª Clara</a></li>
+                                            <li><a href="#benca_st_antonio" data-transition="slide">Benção de St. Antonio.</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="inner">
+                                <img class="movie-pic" src="img/anjos.jpg" alt="">
+                                <div class="scroll-overflow">
+                                    <div class="bg-white">
+                                        <h1>Oraçãos aos Santos Anjos</h1>                                
+                                        <ul data-role="listview" data-filter="true" data-filter-placeholder="Pesquisar..." data-inset="true" data-theme="b">
+                                            <li><a href="#anjo_gabriel" data-transition="slide">Anjo Gabriel</a></li>
+                                            <li><a href="#" data-transition="slide">Anjo Miguel</a></li>
+                                            <li><a href="#" data-transition="slide">Anjo Rafael</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="inner">
+                                <img class="movie-pic" src="img/nsa.jpg" alt="">
+                                <div class="scroll-overflow">
+                                    <div class="bg-white">
+                                        <h1>Orações a Nossa Senhora</h1>                                
+                                        <ul data-role="listview" data-filter="true" data-filter-placeholder="Pesquisar..." data-inset="true" data-theme="b">
+                                            <li><a href="#" data-transition="slide">Nsª de Guadalupe</a></li>
+                                            <li><a href="#" data-transition="slide">Nsª de Fatima</a></li>
+                                            <li><a href="#" data-transition="slide">Nsª de Lourdes</a></li>
+                                            <li><a href="#" data-transition="slide">Nsª de Częstochowy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="inner">
+                                <img class="movie-pic" src="img/santos.jpg" alt="">
+                                <div class="scroll-overflow">
+                                    <div class="bg-white">
+                                        <h1>Orações aos Santos</h1>                                
+                                        <ul data-role="listview" data-filter="true" data-filter-placeholder="Pesquisar..." data-inset="true" data-theme="b">
+                                            <li><a href="#" data-transition="slide">Santo Antonio</a></li>
+                                            <li><a href="#" data-transition="slide">Santo Agostinho</a></li>
+                                            <li><a href="#" data-transition="slide">São José Escriva</a></li>                                            
+                                            <li><a href="#" data-transition="slide">Santa Sofia</a></li>                                                                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="inner">
+                                <img class="movie-pic" src="http://lorempixel.com/320/568/" alt="">
+                                <div class="scroll-overflow">
+                                    <div class="bg-white">
+                                        <h1>Liturgia das Horas</h1>                                
+                                        <ul data-role="listview" data-filter="true" data-filter-placeholder="Pesquisar..." data-inset="true" data-theme="b">
+                                            <li><a href="#" data-transition="slide">Laudes</a></li>
+                                            <li><a href="#" data-transition="slide">Vésperas</a></li>                                            
+                                            <li><a href="#" data-transition="slide">Completas</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>                                               
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+        <!-- /Home -->       
+        
+        <!-- List alimentos -->
+        <div id="alimentos" data-role="page" data-theme="a" data-url="info" tabindex="0" class="ui-page ui-page-theme-a">
+            <div data-role="header" role="banner" class="ui-header ui-bar-inherit">                
+                <a href="javascript:history.go(-1)" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>
+                <h1 class="ui-title" role="heading" aria-level="1">Benção dos alimentos</h1>                
+                <a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+            </div>
+            
+
+            <div role="main" class="ui-content">
+                <h2>Benção dos alimentos</h2>
+                <ul data-role="listview" data-filter="true" data-filter-placeholder="Pesquisar..." data-inset="true" data-theme="b">
+                    <li><a href="#refeircao_isidoro_one" data-transition="slide">Oração St. Isidoro</a></li>
+                    <li><a href="#refeircao_isidoro_two" data-transition="slide">Oração St. Isidoro 2</a></li>
+                    <li><a href="#refeircao_isidoro_three" data-transition="slide">Oração St. Isidoro 3</a></li>
+                    <li><a href="#">Oração Shalom</a></li>
+                    <li><a href="#">Oração Opus Dei</a></li>
+                </ul>                
+
+            </div>
+        </div>
+        <!-- /List alimentos -->
+        
+        
+        <!-- Oração St. Isidoro 1 -->
+        <div id="refeircao_isidoro_one" data-role="page" data-theme="a" data-url="info" tabindex="0" class="ui-page ui-page-theme-a">
+            <div data-role="header" role="banner" class="ui-header ui-bar-inherit">                
+                <a href="javascript:history.go(-1)" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>
+                <h1 class="ui-title" role="heading" aria-level="1">Benção dos alimentos</h1>                
+                <a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+            </div>
+            
+
+            <div role="main" class="ui-content">
+                <h2>Oração St. Isidoro</h2>
+                <h4>Antes das refeições</h4>
+                
+                <p>Abençoai, Senhor, 
+                os alimentos que vamos tomar;
+                que eles renovem as nossas forças
+                para melhor Vos servir e amar.</p>
+
+                <h4>Depois das refeições</h4>
+
+                <p>Nós Vos damos graças, Senhor, 
+                pelos vossos benefícios, 
+                a Vós que viveis e reinais 
+                pelos séculos dos séculos. Amen.</p>
+
+            </div>
+        </div>
+        <!-- /Oração St. Isidoro 1 -->
+        
+        <!--Oração St. Isidoro 2 -->
+        <div id="refeircao_isidoro_two" data-role="page" data-theme="a" data-url="info" tabindex="0" class="ui-page ui-page-theme-a">
+            <div data-role="header" role="banner" class="ui-header ui-bar-inherit">                
+                <a href="javascript:history.go(-1)" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>
+                <h1 class="ui-title" role="heading" aria-level="1">Benção dos alimentos</h1>                
+                <a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+            </div>
+            
+
+            <div role="main" class="ui-content">
+                <h2>Oração St. Isidoro 2</h2>
+                <p>Em nome do Pai e do Filho e do Espírito Santo.</p>
+                <p>Senhor, 
+                velai por nós aqui reunidos, 
+                abençoai a refeição que vamos tomar, 
+                abençoai e ajudai quem a confeccionou.
+                <br />
+                Pai nosso.</p>
+
+            </div>
+        </div>
+        <!-- /Oração St. Isidoro 2 -->
+        
+        <!--Oração St. Isidoro 3 -->
+        <div id="refeircao_isidoro_three" data-role="page" data-theme="a" data-url="info" tabindex="0" class="ui-page ui-page-theme-a">
+            <div data-role="header" role="banner" class="ui-header ui-bar-inherit">                
+                <a href="javascript:history.go(-1)" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>
+                <h1 class="ui-title" role="heading" aria-level="1">Benção dos alimentos</h1>                
+                <a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+            </div>
+            
+
+            <div role="main" class="ui-content">
+                <h2>Oração St. Isidoro 3</h2>
+                <p>Abençoai-nos, Senhor, 
+                e a estes alimentos 
+                que recebemos de vossas mãos. 
+                Por Cristo Nosso Senhor.</p>
+
+                <p>Que o Rei da eterna glória 
+                nos faça participantes da mesa celestial. Amen.</p>
+
+            </div>
+        </div>
+        <!-- /Oração St. Isidoro 3 -->
+        
+        
+        <!-- Bença de Sta. Clara -->
+        <div id="benca_sta_clara" data-role="page" data-theme="a" data-url="info" tabindex="0" class="ui-page ui-page-theme-a">
+            <div data-role="header" role="banner" class="ui-header ui-bar-inherit">                
+                <a href="javascript:history.go(-1)" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>
+                <h1 class="ui-title" role="heading" aria-level="1">Benção</h1>                
+                <a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+            </div>
+            
+
+            <div role="main" class="ui-content">
+                <h2>Bença de Santa Clara</h2>
+                <p>O Senhor te abençoe e te proteja<br />
+                faça resplandecer sobre a ti a sua face<br />
+                e te dê a sua misericórdia.<br />
+                Volte para ti o seu olhar<br />
+                e te dê a paz.<br />
+                Derrame sobre ti as suas<br />
+                bênçãos e no céu te coloque<br />
+                entre os seus Santos e Santas.<br />
+                O Senhor esteja sempre contigo<br />
+                e que tu estejas sempre com Ele.</p>
+
+            </div>
+        </div>
+        <!-- /Bença de sta. clara -->   
+        
+        <!-- Bença de St. Antonio -->
+        <div id="benca_st_antonio" data-role="page" data-theme="a" data-url="info" tabindex="0" class="ui-page ui-page-theme-a">
+            <div data-role="header" role="banner" class="ui-header ui-bar-inherit">                
+                <a href="javascript:history.go(-1)" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>
+                <h1 class="ui-title" role="heading" aria-level="1">Benção</h1>                
+                <a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+            </div>
+            
+
+            <div role="main" class="ui-content">
+                <h2>Bença de Santo Antonio</h2>
+                <p>Eis a Cruz do Senhor:<br />
+                Presenças inimigas fugi!<br />
+                Venceu o Leão da Tribo Judá,<br />
+                Filho de David! Aleluia!<br />
+                <br /><br />      
+                O Senhor Jesus Cristo esteja junto de nós, para Nos defender;<br />
+                Dentro de nós, para nos Conservar;<br />
+                À frente de Nós, para Nos guiar;<br />
+                Atrás de nós para nos Guardar;<br />
+                Sobre Nós para nos Abençoar;<br />
+                Ele que, com o Pai e o Espírito Santo, <br />
+                vive e reina por todo o sempre.<br />
+                Ámen.<br />
+                <br />
+                A bênção de Deus, todo Poderoso,<br />
+                Pai, Filho e Espírito Santo desça sobre nós <br />
+                e permaneça para sempre. <br />
+                Ámen.</p>
+            </div>
+        </div>
+        <!-- /Bença de St. Antonio --> 
+        
+         <!-- Anjo Gabriel -->
+        <div id="anjo_gabriel" data-role="page" data-theme="a" data-url="info" tabindex="0" class="ui-page ui-page-theme-a">
+            <div data-role="header" role="banner" class="ui-header ui-bar-inherit">                
+                <a href="javascript:history.go(-1)" data-transition="flip" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext"></a>
+                <h1 class="ui-title" role="heading" aria-level="1">Anjo Gabriel</h1>                
+                <a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+            </div>
+            
+
+            <div role="main" class="ui-content">
+                <h2>Anjo Gabriel</h2>
+                <ul data-role="listview" data-filter="true" data-filter-placeholder="Pesquisar..." data-inset="true" data-theme="b">
+                    <li><a href="#" data-transition="slide"></a></li>
+                    <li><a href="#" data-transition="slide"></a></li>
+                    <li><a href="#" data-transition="slide"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Bença de St. Antonio -->
+        
+        
+         <!-- Info Page -->
+        <div id="info" data-role="page" data-theme="a" data-url="info" tabindex="0" class="ui-page ui-page-theme-a">
+            <div data-role="header" role="banner" class="ui-header ui-bar-inherit">                            
+                <h1 class="ui-title" role="heading" aria-level="1">Benção dos alimentos</h1>                
+                <a href="#home" data-transition="flip" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext"></a>
+            </div>
+
+            <div role="main" class="ui-content">
+                <h2>Two</h2>
+                <p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>
+                <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>
+                <p><a href="javascript:history.go(-1)" data-transition="flip" data-direction="reverse" class="ui-btn ui-shadow ui-corner-all ui-btn-b">Back to home</a></p>
+
+            </div>
+        </div>
+        <!-- /info Page -->
+        
+        <!-- JS -->
+        <script src="js/jquery.js"></script> 
+        <script src="js/jquery.mobile-1.4.1.min.js"></script> 
+
+        <script src="js/idangerous.swiper-2.0.min.js"></script>
+        <script src="js/movies-app.js"></script>
+	</body>
+</html> 
